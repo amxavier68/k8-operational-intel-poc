@@ -1,8 +1,34 @@
+# Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment
 .env
 .env.*
+!.env.example
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+
+# Build outputs
 dist/
+build/
 coverage/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+.atom/
