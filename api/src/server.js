@@ -1,7 +1,7 @@
-import dotenv from "dotenv";
-dotenv.config();
-
-console.log("k8-env:", Boolean(process.env.MONGO_URI), process.env.MONGO_URI?.slice(0, 25));
+// k8-env: use .env locally, rely on platform env vars in production
+if (process.env.NODE_ENV !== "production") {
+  await import("dotenv/config");
+}
 
 import express from "express";
 import cors from "cors";
